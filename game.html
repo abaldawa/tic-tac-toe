@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="game.css">
+        <script src="game.js"></script>
+    </head>
+
+    <body onload="generateGrid()">
+        <div id="game" class="container pointer"></div>
+        <div id="popup" class="overlay" style="display: none;">
+            <div class="modal">
+                <div id="modal-text"><p id="modal-message-header" class="modal-text-info"></p><p id="modal-subMessage"></p></div>
+                <button class=" yes-color" id="yes-button" onclick="restartGame()">Yes</button>
+                <button class=" no-color"  id="no-button" onclick="hidePopup(true)">No</button>
+                <button class=" yes-color" id="ok-button" onclick="hidePopup(true)">OK</button>
+            </div>
+        </div>
+    </body>
+</html>    
